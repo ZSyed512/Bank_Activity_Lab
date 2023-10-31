@@ -1,28 +1,19 @@
 # README
 
-Credit to the [Data Science Working Group](http://datascience.codeforsanfrancisco.org) for this template. To complete this project, delete all template text (save for the headers) and fill in your own information.
-
-Begin reading `instructions.md` to get started.
 
 ## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
+The purpose of this project is to engineer a pipeline to analyze stock data in python. We will achieve this by implementing classes and use Object Oriented programming and documentation reading skills to complete the pipeline. The piepline will compute the Average, Median and Standard Deviation of 9 weeks of sample stock data
+
 
 ### Methods Used
 * Inferential Statistics
 * Machine Learning
-* Data Visualization
-* Predictive Modeling
-* etc.
+* Object Oriented Programming 
+* Classes
 
 ### Technologies
-* R 
 * Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
-* etc. 
+* VSCode
 
 ## Project Description
-(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+I was given a repository that represents an incomplete data engineering project with a goal to satisfy the purpose described above. The sample dataset that was provided contains 9 weeks of data. Utilizing object oriented programming, I first completed the Average function to compute the average of stock prices from the given list of lists data. Since the data was in string format and also contained missing values, I first iterated over each row of self.data within the average01 function of the stockmetrics class. I converted the string values to float values and also skipped over any missing values. After computing the average for each row, I appended the Averages list with the value of the average for each row and finally returned the Averages list. I followed the same procedure for the median and standard deviation functions as well. At the end, I used the validate file to check that my code was working correctly.
